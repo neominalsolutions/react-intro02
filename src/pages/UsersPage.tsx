@@ -21,12 +21,12 @@ export default function UsersPage() {
 			.then((data) => {
 				console.log('data', data);
 			});
-	}, []); // bgColor state değişiminde tekrar tetiklen.
+	}, []); // component didMount temsil eder.
 
 	useEffect(() => {
 		// componentdidUpdate life cycle method denk gelir
 		console.log('color değişti');
-	}, [bgColor]);
+	}, [bgColor]); // bgColor state değişiminde tekrar tetiklen.
 
 	useLayoutEffect(() => {
 		// senkron çalışır.

@@ -88,6 +88,7 @@ export default function TodosPage() {
 		// 1.yöntem loadPosts();
 	};
 
+	// todo değişiminde apiden veri çek.
 	useEffect(() => {
 		if (selectedTodo) {
 			loadPosts(); // bir seçim yapıldı yeni postları getir.

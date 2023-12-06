@@ -14,6 +14,7 @@ export default function Layout({ children }: LayoutProps) {
 		{ text: 'Hakkımızda', url: '/about' },
 		{ text: 'Users', url: '/users' },
 		{ text: 'Todos', url: '/todos' },
+		{ text: 'Tabs', url: '/tabs' },
 	];
 
 	return (

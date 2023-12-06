@@ -13,6 +13,7 @@ import Navbar from './layout/Navbar';
 import UsersPage from './pages/UsersPage';
 import '@fontsource/roboto/300.css';
 import TodosPage from './pages/TodosPage';
+import TabsPage from './pages/TabPages';
 
 // Uygulama ilk yüklenirken uygulama için clientside routing yapısını uygulama tanıyoruz.
 
@@ -38,6 +39,7 @@ root.render(
 					<Route path="/about" Component={AboutPage}></Route>
 					<Route path="/users" Component={UsersPage}></Route>
 					<Route path="/todos" Component={TodosPage}></Route>
+					<Route path="/tabs" Component={TabsPage}></Route>
 					{/* <Route path='/users/:id' element={<UsersPage ></UsersPage>}></Route> */}
 				</Route>
 				{/* nested routing yapısı */}

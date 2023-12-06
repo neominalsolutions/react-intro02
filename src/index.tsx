@@ -10,6 +10,7 @@ import Layout from './layout/Layout';
 import Footer from './layout/Footer';
 import Divider from './layout/Divider';
 import Navbar from './layout/Navbar';
+import UsersPage from './pages/UsersPage';
 
 // Uygulama ilk yüklenirken uygulama için clientside routing yapısını uygulama tanıyoruz.
 
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
 root.render(
-	<React.StrictMode>
+	<>
 		<BrowserRouter>
 			<Routes>
 				{/* aşağıdaki react jsx elementler layoutda children olarak işaretlediğimiz yere gelecek */}
@@ -33,6 +34,7 @@ root.render(
 					<Route path="/" Component={HomePage}></Route>
 					{/* homepage ile karşılama yapacağız. */}
 					<Route path="/about" Component={AboutPage}></Route>
+					<Route path="/users" Component={UsersPage}></Route>
 				</Route>
 				{/* nested routing yapısı */}
 				<Route
@@ -55,7 +57,7 @@ root.render(
 				</Route>
 			</Routes>
 		</BrowserRouter>
-	</React.StrictMode>
+	</>
 );
 
 // If you want to start measuring performance in your app, pass a function

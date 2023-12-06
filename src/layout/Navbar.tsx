@@ -13,10 +13,8 @@ export default function Navbar({ items }: NavbarProps) {
 			<nav>
 				{items.map((item: NavbarItem, index: number) => {
 					return (
-						<span style={{ padding: '2px' }}>
-							<Link key={index} to={item.url}>
-								{item.text}
-							</Link>
+						<span key={index} style={{ padding: '2px' }}>
+							<Link to={item.url}>{item.text}</Link>
 						</span>
 					);
 				})}

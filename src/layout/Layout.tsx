@@ -10,11 +10,9 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
 	const items: NavbarItem[] = [
-		{
-			text: 'Anasayfa',
-			url: '/',
-		},
+		{ text: 'Anasayfa', url: '/' },
 		{ text: 'Hakkımızda', url: '/about' },
+		{ text: 'Users', url: '/users' },
 	];
 
 	return (

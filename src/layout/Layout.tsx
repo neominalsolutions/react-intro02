@@ -13,6 +13,7 @@ export default function Layout({ children }: LayoutProps) {
 		{ text: 'Anasayfa', url: '/' },
 		{ text: 'Hakkımızda', url: '/about' },
 		{ text: 'Users', url: '/users' },
+		{ text: 'Todos', url: '/todos' },
 	];
 
 	return (

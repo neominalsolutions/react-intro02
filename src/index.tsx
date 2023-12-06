@@ -11,6 +11,8 @@ import Footer from './layout/Footer';
 import Divider from './layout/Divider';
 import Navbar from './layout/Navbar';
 import UsersPage from './pages/UsersPage';
+import '@fontsource/roboto/300.css';
+import TodosPage from './pages/TodosPage';
 
 // Uygulama ilk yüklenirken uygulama için clientside routing yapısını uygulama tanıyoruz.
 
@@ -35,6 +37,8 @@ root.render(
 					{/* homepage ile karşılama yapacağız. */}
 					<Route path="/about" Component={AboutPage}></Route>
 					<Route path="/users" Component={UsersPage}></Route>
+					<Route path="/todos" Component={TodosPage}></Route>
+					{/* <Route path='/users/:id' element={<UsersPage ></UsersPage>}></Route> */}
 				</Route>
 				{/* nested routing yapısı */}
 				<Route
